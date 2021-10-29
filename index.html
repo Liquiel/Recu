@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Préstamos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+  <!-- Formulario de Préstamos -->
+
+  <div class="wrapper">
+  <form class="form" id="formTask">
+    <h1> Préstamos Don Bosco</h1>
+
+      <label for="title">Nombre:</label>
+      <input type="text" id="title" placeholder="Nombre" class="form-control" required="">
+      
+      <label for="title">Monto inicial a prestar:</label>
+      <input type="number" id="monto" placeholder="Préstamo ($)" class="form-control" min="0" required=""></input>
+
+      
+      <label for="title">Intereses:</label>
+      <input type="number" id="inter" placeholder="Intereses (%)" class="form-control" min="0" required=""></input>
+
+      <label for="name">Fecha préstamo</label>
+        <input type="date" id="fechad" class="form-control" required=""></input>
+      
+      <p><b>Tiempo:</b> 
+        <input type="number" name="tiempo" placeholder="tiempo (meses)" required="" min="3">
+        <input type="hidden" name="sz_tot" value="0.00" />
+     
+      </p><br>
+
+      <br>
+      <label class="total">
+        <b>Total: $</b><input type="text" name="total" class="num" value="0.00"readonly="readonly" />
+      </label>
+      <button type="submit" class="btn" onclick="validar();">Hacer préstamo</button>
+    
+  </form>
+  </div>
+  <div class="">
+    <table>
+
+    </table>
+    <div id="tasks">
+    </div>
+
+  </div>
+  <script src="js/js2.js"> </script>
+  <script src="js/js.js"></script>
+  </div>
+</body>
+
+</html>
