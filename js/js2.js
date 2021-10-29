@@ -38,8 +38,8 @@ function saveTask(e) {
     monto,
     inter,
     fechad,
-    capital,
-    tiempo,
+   
+    tiempo
   };
 
 
@@ -69,8 +69,8 @@ function getTasks() {
     let monto = tasks[i].monto;
     let inter = tasks[i].inter;
     let fechad = tasks[i].fechad;
-    let capital = tasks[i].monto *  tasks[i].inter;
-    let tiempo = tasks[i].tiempo;
+    let tiempo = tasks[i].tiempo ;
+ 
 
     tasksView.innerHTML += `<div class="">
         <div id="tablas">
@@ -88,8 +88,8 @@ function getTasks() {
         <td>${monto}</td>
         <td>${inter}</td>
         <td>${fechad}</td>
-        <td>${capital}</td>
-        <td>${capital/tiempo}</td>
+        <td>${tiempo}</td>
+      
         </tr> 
         
         </div>
@@ -98,4 +98,5 @@ function getTasks() {
 }
 
 getTasks();
+
 
